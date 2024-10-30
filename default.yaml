@@ -1,0 +1,55 @@
+# QC Processor and Reporting Tool Configuration File
+version: 0.1
+description: "Configuration for the QC Processor and Reporting Tool for the monitoring of FLEX L1B products."
+
+sanity_checks_enable: 
+  enabled: true
+  schema_version: "schema_version_1"
+
+# Quality Control Analysis
+quality_checks:
+  - id: L1B_IA_QualityFlags
+  description: "Check L1B quality flags to monitor the percentage of Bad, Dead, and Saturated pixels per spectral channel."
+  qi_name: "quality_flags"
+  qi_source: "Annotation_data/Quality_flags/quality_flags"
+  regions_of_interest:
+    - "Global"
+  time_windows: 
+    - "N/A"
+  thresholds_per_channel:
+    - th_fail_max_bad: 5.0
+    - th_warn_max_bad: 3.0
+    - th_fail_max_dead: 2.0
+    - th_warn_max_dead: 1.0
+    - th_fail_max_saturated: 4.0 
+    - th_warn_max_saturated: 2.5 
+  - id: L1B_CA_TempVAU
+  description: "Monitor the temperature of the Video Acquisition Unit (VAU) to ensure it remains within acceptable thresholds."
+  qi_name: "temperatures_VAU"
+  qi_source: "temperatures_VAU"
+  regions_of_interest:
+    - "Global"
+  time_windows: 
+    - "Continuous"
+  thresholds_per_orbit:
+    - th_fail_tvau_min: -20.0
+    - th_warn_tvau_min: -15.0
+    - th_fail_tvau_max: 45.0
+    - th_warn_tvau_max: 40.0
+    - th_fail_tvau_std: 5.0
+    - th_warn_tvau_std: 3.0
+
+# File Output Settings
+output:
+  stac_collection: "collection_example"
+
+# Logging and Alerts Settings
+logging:
+  log_level: DEBUG/INFO 
+  log_to_file: true/false
+  log_directory: "/directory/to/store/log/"
+notification:
+  email_on_failure: true
+  email_on_warning: false                 
+  notification_emails: 
+-   “email@example.com”
