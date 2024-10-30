@@ -1,5 +1,6 @@
 # QC Processor and Reporting Tool Configuration File
 version: 0.1
+product_type: "L1B"
 description: "Configuration for the QC Processor and Reporting Tool for the monitoring of FLEX L1B products."
 
 sanity_checks_enable: 
