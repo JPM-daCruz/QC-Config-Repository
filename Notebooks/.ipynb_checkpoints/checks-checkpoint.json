@@ -1,0 +1,50 @@
+[
+    {
+        "quality_check_id": "check1",
+        "quality_indicator": "indicator1",
+        "result": "passed",
+        "sensing_start": "15/11/2024 11:02:00",
+        "sensing_stop": "15/11/2024 11:05:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    },
+    {
+        "quality_check_id": "check2",
+        "quality_indicator": "indicator1",
+        "result": "warning",
+        "sensing_start": "15/11/2024 11:01:20",
+        "sensing_stop": "15/11/2024 11:05:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    },
+    {
+        "quality_check_id": "check1",
+        "quality_indicator": "indicator1",
+        "result": "passed",
+        "sensing_start": "15/11/2024 11:06:00",
+        "sensing_stop": "15/11/2024 11:09:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    },
+    {
+        "quality_check_id": "check1",
+        "quality_indicator": "indicator1",
+        "result": "error",
+        "sensing_start": "15/11/2024 11:10:00",
+        "sensing_stop": "15/11/2024 11:13:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    },
+    {
+        "quality_check_id": "check3",
+        "quality_indicator": "indicator2",
+        "result": "passed",
+        "sensing_start": "15/11/2024 11:10:00",
+        "sensing_stop": "15/11/2024 11:13:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    },
+    {
+        "quality_check_id": "check3",
+        "quality_indicator": "indicator2",
+        "result": "warning",
+        "sensing_start": "15/11/2024 11:06:00",
+        "sensing_stop": "15/11/2024 11:09:00",
+        "product_filename": "FLX_LXX_OBS____yyymmddTHHMMSS_yyymmddTHHMMSS_yyymmddTHHMMSS__0128_011_045_2826_0001"
+    }
+]
